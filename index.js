@@ -1,16 +1,15 @@
 import { Configuration, OpenAIApi } from "openai";
 import {config} from 'dotenv';
-config()
-
 const configuration = new Configuration({
-    organization: "org-EPuPQKy52z7qAIC1kBqy3Yza",
+    organization: "org-erz5K2MTl0F0rEYixUaPf6AI",
     apiKey: process.env.OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
 const response = await openai.createCompletion({
-    model:"text-davinci-003",
-    prompt: process.argv[2],
-    max_tokens: 100,
-    temperature: 0,
+    model: "text-davinci-003",
+  prompt: process.argv[2],
+  max_tokens: 100,
+  temperature: 0
 });
-console.log(response.data.choices[0].text)
+
+console.log(response.data.choice[0].text)
