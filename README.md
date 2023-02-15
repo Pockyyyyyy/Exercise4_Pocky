@@ -9,7 +9,7 @@ This exercise is made by **Hongbing Pan**.
 References: Most codes from OpenAi - Chat GPT
 
 1. Used the example scripts as a start point.
-2. Found an input example p5.js sketch online [Open in Dev Containers](https://editor.p5js.org/tom.smith/sketches/fASj3inoc). **Told the Chat GPT to combine the example script and input script together to create a code that the "text" (request) will be whatever the user put in the text box**.
+2. Found an input example p5.js sketch online [Open in Dev Containers](https://editor.p5js.org/tom.smith/sketches/fASj3inoc). <ins>**Told the Chat GPT to combine the example script and input script together to create a code that the "text" (request) will be whatever the user put in the text box**.</ins>
 3. At this moment the response is incomplete. For example, if the input is "what is life", then the response will only be "Life is the experience of living, including all the joys, struggles, and challenges that". Users can't tell what is behind "that". So I asked the Chat GPT to revise the code to **when there is a response already exists, then the next time when the user press submit button, it will use the existing response as the input**.
 4. After revising the code, I realized if I keep pressing the submit button, it will stop when the response is complete. And even I type a new message as input, it will not clear the old response or use the new message as the new input. **So I told Chat GPT to add a clear button to clear existing responses when the user pressed it**.
 5. Then I feel it's hard for the user to realize that you can keep pressing submit button to make the response completed, **so I told Chat GPT to revise the code so the submit button's text will change to "next" after there is a response existed**.
